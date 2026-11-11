@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember & Ash Roastery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <span class="mark">Ember &amp; Ash</span>
+    <nav>
+      <a href="#beans">Beans</a>
+      <a href="#process">Process</a>
+      <a href="#visit">Visit</a>
+      <a href="#orders">Live Orders</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Small-batch roastery — Pune</p>
+      <h1>We roast by<br>color, not by clock.</h1>
+      <p class="lede">Every batch is pulled the moment it reaches the exact shade
+        we're after — cinnamon, chestnut, or bittersweet. Twelve kilos at a time,
+        drum-roasted over an open flame in our shopfront on FC Road.</p>
+      <a class="btn" href="#beans">See this week's beans</a>
+    </div>
+    <div class="hero-dial" aria-hidden="true">
+      <svg viewBox="0 0 320 320" class="dial-svg">
+        <circle cx="160" cy="160" r="140" fill="none" stroke="#3A322C" stroke-width="1"/>
+        <circle cx="160" cy="20" r="9" class="dot dot-1"/>
+        <circle cx="300" cy="160" r="9" class="dot dot-2"/>
+        <circle cx="160" cy="300" r="9" class="dot dot-3"/>
+        <circle cx="20" cy="160" r="9" class="dot dot-4"/>
+        <text x="160" y="150" text-anchor="middle" class="dial-label-big">4</text>
+        <text x="160" y="178" text-anchor="middle" class="dial-label-small">ROAST STAGES</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="beans" class="beans">
+  <div class="wrap">
+    <p class="eyebrow">The lineup</p>
+    <h2>This week's beans</h2>
+    <div class="bean-grid">
+
+      <article class="bean-card">
+        <div class="swatch swatch-1"></div>
+        <div class="bean-top-row">
+          <p class="stage">Stage I — Cinnamon</p>
+          <span class="price-tag">₹680</span>
+        </div>
+        <h3>Yirgacheffe, Ethiopia</h3>
+        <p>Washed process. Bright and floral, jasmine tea and lemon zest,
+          a light body that stays clean through the last sip.</p>
+        <p class="meta">1,940m · Heirloom · Filter roast</p>
+        <button class="order-btn" onclick="openOrderModal('yirgacheffe', 'Yirgacheffe, Ethiopia', 680)">
+          Order Fresh Bag
+        </button>
+      </article>
+
+      <article class="bean-card">
+        <div class="swatch swatch-2"></div>
+        <div class="bean-top-row">
+          <p class="stage">Stage II — Chestnut</p>
+          <span class="price-tag">₹540</span>
+        </div>
+        <h3>Chikmagalur, Karnataka</h3>
+        <p>Monsoon-processed at a family estate two states south.
+          Baking spice, jaggery, and a round, syrupy body.</p>
+        <p class="meta">1,100m · Arabica S795 · Filter or espresso</p>
+        <button class="order-btn" onclick="openOrderModal('chikmagalur', 'Chikmagalur, Karnataka', 540)">
+          Order Fresh Bag
+        </button>
+      </article>
+
+      <article class="bean-card">
+        <div class="swatch swatch-3"></div>
+        <div class="bean-top-row">
+          <p class="stage">Stage III — Bittersweet</p>
+          <span class="price-tag">₹620</span>
+        </div>
+        <h3>Huila, Colombia</h3>
+        <p>Dark cocoa nib and toasted hazelnut, built for milk —
+          it won't disappear under a flat white.</p>
+        <p class="meta">1,700m · Castillo · Espresso</p>
+        <button class="order-btn" onclick="openOrderModal('huila', 'Huila, Colombia', 620)">
+          Order Fresh Bag
+        </button>
+      </article>
+
+      <article class="bean-card">
+        <div class="swatch swatch-4"></div>
+        <div class="bean-top-row">
+          <p class="stage">Stage IV — Ember</p>
+          <span class="price-tag">₹590</span>
+        </div>
+        <h3>Mandheling, Sumatra</h3>
+        <p>Wet-hulled and pushed dark on purpose. Cedar smoke, dark
+          molasses, low acidity — our house dark roast.</p>
+        <p class="meta">1,200m · Typica · Espresso or moka</p>
+        <button class="order-btn" onclick="openOrderModal('mandheling', 'Mandheling, Sumatra', 590)">
+          Order Fresh Bag
+        </button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <div class="wrap">
+    <p class="eyebrow">How a batch happens</p>
+    <h2>From green to gone-in-a-week</h2>
+    <ol class="steps">
+      <li>
+        <span class="step-num">01</span>
+        <div>
+          <h3>Cup the greens</h3>
+          <p>Every incoming lot is cupped blind against last season's sample
+            before we commit a single kilo of shelf space to it.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">02</span>
+        <div>
+          <h3>Roast in small drums</h3>
+          <p>12kg per batch on our 1962 drum roaster, tracked by bean
+            color and first-crack timing, not by a fixed profile.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">03</span>
+        <div>
+          <h3>Rest four days</h3>
+          <p>Beans de-gas on open trays before bagging — any earlier
+            and the shot pulls sour, any later and it goes flat.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">04</span>
+        <div>
+          <h3>Bag and date</h3>
+          <p>One-way valve bags, hand-labelled with the roast date —
+            we'd rather you know it's three weeks old than pretend otherwise.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <p class="eyebrow">Come by</p>
+      <h2>Visit the shopfront</h2>
+      <p class="lede">Cupping table's open every Saturday morning — bring a
+        thermos, leave with an opinion.</p>
+      <dl class="details">
+        <div><dt>Address</dt><dd>14 FC Road, Deccan Gymkhana, Pune 411004</dd></div>
+        <div><dt>Hours</dt><dd>Tue–Sun, 8:00 AM – 7:00 PM</dd></div>
+        <div><dt>Cupping</dt><dd>Saturdays, 10:00 AM</dd></div>
+      </dl>
+    </div>
+
+    <div class="visit-card">
+      <div class="visit-card-top">
+        <p class="stage">Saturday Cupping Table</p>
+        <span id="remainingSeatsBadge" class="badge">12 seats</span>
+      </div>
+      <h3>Sumatra vs. Colombia</h3>
+      <p>A side-by-side of our two dark-roast lots — same drum,
+        five minutes apart on the timer. Seats are limited to 12.</p>
+
+      <!-- Cupping RSVP Form with Date & City selection -->
+      <form id="cuppingForm" class="cupping-form" onsubmit="handleCuppingSubmit(event)">
+        <div class="form-row">
+          <div class="field-item">
+            <label for="rsvpName">Full Name</label>
+            <input type="text" id="rsvpName" placeholder="e.g. Prerna Taktode" required>
+          </div>
+          <div class="field-item">
+            <label for="rsvpEmail">Email</label>
+            <input type="email" id="rsvpEmail" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field-item">
+            <label for="rsvpPhone">Phone Number</label>
+            <input type="tel" id="rsvpPhone" placeholder="+91 98000 00000" required>
+          </div>
+          <div class="field-item">
+            <label for="rsvpCity">Your City</label>
+            <select id="rsvpCity">
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Delhi NCR">Delhi NCR</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Other">Other City</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field-item">
+            <label for="rsvpSessionDate">Select Saturday Date</label>
+            <select id="rsvpSessionDate">
+              <option value="Saturday, 29 Aug — 10:00 AM">Saturday, 29 Aug — 10:00 AM</option>
+              <option value="Saturday, 05 Sep — 10:00 AM">Saturday, 05 Sep — 10:00 AM</option>
+              <option value="Saturday, 12 Sep — 10:00 AM">Saturday, 12 Sep — 10:00 AM</option>
+              <option value="Saturday, 19 Sep — 10:00 AM">Saturday, 19 Sep — 10:00 AM</option>
+            </select>
+          </div>
+          <div class="field-item">
+            <label for="rsvpGuests">Number of Guests</label>
+            <select id="rsvpGuests">
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-rsvp">Confirm Saturday RSVP</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Live Backend Orders Section -->
+<section id="orders" class="orders-section">
+  <div class="wrap">
+    <div class="orders-header">
+      <div>
+        <p class="eyebrow">Backend in Action</p>
+        <h2>Live Roastery Orders</h2>
+      </div>
+      <button class="btn-refresh" onclick="loadOrders()">Refresh Orders</button>
+    </div>
+    <div id="liveOrdersList" class="orders-grid">
+      <!-- Loaded dynamically via Python API -->
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <span class="mark">Ember &amp; Ash</span>
+    <p>&copy; 2026 Ember &amp; Ash Roastery. Roasted and bagged on FC Road, Pune.</p>
+  </div>
+</footer>
+
+<!-- Order Modal Dialog with Full Details (Name, City, Date, Grind, Size, Notes) -->
+<div id="orderModal" class="modal-backdrop" style="display:none;" onclick="if(event.target===this) closeOrderModal()">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeOrderModal()">&times;</button>
+    <p class="eyebrow">Fresh Batch Order</p>
+    <h3 id="modalBeanTitle">Coffee Name</h3>
+    <p id="modalPriceInfo" class="modal-sub">₹540 per 250g bag</p>
+
+    <form id="orderForm" onsubmit="handleOrderSubmit(event)">
+      <div class="form-row">
+        <div class="field-group">
+          <label for="orderCustomerName">Your Full Name *</label>
+          <input type="text" id="orderCustomerName" placeholder="e.g. Prerna" required>
+        </div>
+        <div class="field-group">
+          <label for="orderPhone">Phone Number *</label>
+          <input type="tel" id="orderPhone" placeholder="+91 98200 00000" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field-group">
+          <label for="orderEmail">Email Address</label>
+          <input type="email" id="orderEmail" placeholder="Prerna@example.com">
+        </div>
+        <div class="field-group">
+          <label for="orderCity">City *</label>
+          <select id="orderCity">
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Delhi NCR">Delhi NCR</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Other">Other City</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field-group">
+          <label for="orderDeliveryDate">Preferred Roast/Delivery Date *</label>
+          <input type="date" id="orderDeliveryDate" required>
+        </div>
+        <div class="field-group">
+          <label for="orderBagSize">Bag Size</label>
+          <select id="orderBagSize" onchange="updateOrderTotal()">
+            <option value="250g">250g Standard Bag</option>
+            <option value="500g">500g (Save 5%)</option>
+            <option value="1kg">1kg Roaster Pack (Save 10%)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field-group">
+          <label for="orderGrind">Grind Preference</label>
+          <select id="orderGrind">
+            <option value="Whole Bean">Whole Bean (Best for freshness)</option>
+            <option value="Pour Over / V60">Pour Over / Chemex / V60 (Medium)</option>
+            <option value="Espresso">Espresso / Moka Pot (Fine)</option>
+            <option value="Aeropress">Aeropress (Medium-Fine)</option>
+            <option value="French Press">French Press / Cold Brew (Coarse)</option>
+            <option value="South Indian Filter">South Indian Filter (Fine)</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="orderQuantity">Quantity (Bags)</label>
+          <input type="number" id="orderQuantity" min="1" max="20" value="1" oninput="updateOrderTotal()" required>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label for="orderAddress">Delivery Address / Pickup Instructions</label>
+        <textarea id="orderAddress" rows="2" placeholder="e.g. Lane 4, Deccan Gymkhana, Pune or 'Pickup at Shopfront'"></textarea>
+      </div>
+
+      <div class="total-row">
+        <span id="modalTotalAmount" class="total-text">Total: ₹540</span>
+        <button type="submit" id="submitOrderBtn" class="btn-confirm">Confirm Order</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+{
+  "beans": [
+    {
+      "id": "yirgacheffe",
+      "name": "Yirgacheffe, Ethiopia",
+      "stage": "Stage I — Cinnamon",
+      "roast_color": "#D8B48A",
+      "process": "Washed process",
+      "notes": "Bright and floral, jasmine tea and lemon zest, a light body that stays clean through the last sip.",
+      "elevation": "1,940m",
+      "varietal": "Heirloom",
+      "brew_method": "Filter roast",
+      "price": 680,
+      "stock_bags": 18
+    },
+    {
+      "id": "chikmagalur",
+      "name": "Chikmagalur, Karnataka",
+      "stage": "Stage II — Chestnut",
+      "roast_color": "#B4703A",
+      "process": "Monsoon-processed at a family estate two states south",
+      "notes": "Baking spice, jaggery, and a round, syrupy body.",
+      "elevation": "1,100m",
+      "varietal": "Arabica S795",
+      "brew_method": "Filter or espresso",
+      "price": 540,
+      "stock_bags": 24
+    },
+    {
+      "id": "huila",
+      "name": "Huila, Colombia",
+      "stage": "Stage III — Bittersweet",
+      "roast_color": "#8C4A2F",
+      "process": "Washed process",
+      "notes": "Dark cocoa nib and toasted hazelnut, built for milk — it won't disappear under a flat white.",
+      "elevation": "1,700m",
+      "varietal": "Castillo",
+      "brew_method": "Espresso",
+      "price": 620,
+      "stock_bags": 15
+    },
+    {
+      "id": "mandheling",
+      "name": "Mandheling, Sumatra",
+      "stage": "Stage IV — Ember",
+      "roast_color": "#4A2E22",
+      "process": "Wet-hulled and pushed dark on purpose",
+      "notes": "Cedar smoke, dark molasses, low acidity — our house dark roast.",
+      "elevation": "1,200m",
+      "varietal": "Typica",
+      "brew_method": "Espresso or moka",
+      "price": 590,
+      "stock_bags": 20
+    }
+  ],
+  "cupping_event": {
+    "title": "Sumatra vs. Colombia",
+    "theme": "A side-by-side of our two dark-roast lots — same drum, five minutes apart on the timer.",
+    "day": "Saturday, 10:00 AM",
+    "total_seats": 12,
+    "rsvps": [
+      {
+        "name": "Kabir Mehta",
+        "email": "kabir@example.com",
+        "guests": 2
+      },
+      {
+        "name": "Prerna Taktode",
+        "email": "prernataktode26@gmail.com",
+        "phone": "+919356992717",
+        "city": "Pune",
+        "session_date": "Saturday, 29 Aug — 10:00 AM",
+        "guests": 1
+      },
+      {
+        "name": "Prerna Taktode",
+        "email": "prernataktode26@gmail.com",
+        "phone": "+919356992717",
+        "city": "Pune",
+        "session_date": "Saturday, 12 Sep — 10:00 AM",
+        "guests": 3
+      },
+      {
+        "name": "Prerna Taktode",
+        "email": "prernataktode26@gmail.com",
+        "phone": "+9178945621",
+        "city": "Hyderabad",
+        "session_date": "Saturday, 12 Sep — 10:00 AM",
+        "guests": 2
+      },
+      {
+        "name": "Prerna Taktode",
+        "email": "prernataktode26@gmail.com",
+        "phone": "+919356992717",
+        "city": "Pune",
+        "session_date": "Saturday, 12 Sep — 10:00 AM",
+        "guests": 3
+      }
+    ]
+  },
+  "orders": [
+    {
+      "order_id": "EA-1002",
+      "customer_name": "Prerna Taktode",
+      "email": "prernataktode26@gmail.com",
+      "phone": "+919356992717",
+      "city": "Pune",
+      "delivery_address": "Barti campus, In front of vibgyor school, commerzone, yerwada, pune.\nIn front of vibgyor school",
+      "delivery_date": "2026-08-23",
+      "bean_name": "Yirgacheffe, Ethiopia",
+      "grind": "Whole Bean",
+      "bag_size": "250g",
+      "quantity": 1,
+      "notes": "",
+      "total_amount": 680,
+      "status": "Received"
+    },
+    {
+      "order_id": "EA-1003",
+      "customer_name": "Prerna Taktode",
+      "email": "prernataktode26@gmail.com",
+      "phone": "+919356992717",
+      "city": "Pune",
+      "delivery_address": "Barti campus, In front of vibgyor school, commerzone, yerwada, pune.\nIn front of vibgyor school",
+      "delivery_date": "2026-08-23",
+      "bean_name": "Huila, Colombia",
+      "grind": "Whole Bean",
+      "bag_size": "250g",
+      "quantity": 1,
+      "notes": "",
+      "total_amount": 620,
+      "status": "Received"
+    },
+    {
+      "order_id": "EA-1003",
+      "customer_name": "yash",
+      "email": "yash4011@gmail.com",
+      "phone": "+91 8529637412",
+      "city": "Mumbai",
+      "delivery_address": "pune,maharastra",
+      "delivery_date": "2026-10-09",
+      "bean_name": "Mandheling, Sumatra",
+      "grind": "Espresso",
+      "bag_size": "250g",
+      "quantity": 2,
+      "notes": "",
+      "total_amount": 1180,
+      "status": "Received"
+    },
+    {
+      "order_id": "EA-1004",
+      "customer_name": "Prerna Taktode",
+      "email": "prernataktode26@gmail.com",
+      "phone": "+919356992717",
+      "city": "Pune",
+      "delivery_address": "Barti campus, In front of vibgyor school, commerzone, yerwada, pune.\nIn front of vibgyor school",
+      "delivery_date": "2026-10-10",
+      "bean_name": "Yirgacheffe, Ethiopia",
+      "grind": "French Press",
+      "bag_size": "500g",
+      "quantity": 8,
+      "notes": "",
+      "total_amount": 10336,
+      "status": "Received"
+    },
+    {
+      "order_id": "EA-1005",
+      "customer_name": "mamta",
+      "email": "mamta@Gmail.com",
+      "phone": "9766147438",
+      "city": "Pune",
+      "delivery_address": "shivaji nagar pune",
+      "delivery_date": "2026-11-10",
+      "bean_name": "Yirgacheffe, Ethiopia",
+      "grind": "Pour Over / V60",
+      "bag_size": "500g",
+      "quantity": 5,
+      "notes": "",
+      "total_amount": 6460,
+      "status": "Received"
+    },
+    {
+      "order_id": "EA-1006",
+      "customer_name": "pranav taktode",
+      "email": "pranavtaktode@565gamil.com",
+      "phone": "9403164060",
+      "city": "Pune",
+      "delivery_address": "chavan gali kranti chowk dharashiv",
+      "delivery_date": "2026-12-10",
+      "bean_name": "Chikmagalur, Karnataka",
+      "grind": "Whole Bean",
+      "bag_size": "250g",
+      "quantity": 8,
+      "notes": "",
+      "total_amount": 4320,
+      "status": "Received"
+    }
+  ],
+  "newsletter_subscribers": []
+}
